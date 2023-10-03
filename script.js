@@ -92,6 +92,7 @@ function loadinganimation(){
 }
 loadinganimation()
 
+
 function cursorAnimation(){
     document.addEventListener("mousemove",function(dets){
         gsap.to("#corsor",{
@@ -99,8 +100,10 @@ function cursorAnimation(){
             top:dets.y
         })
     })
+    cosorcolor=document.querySelector("#corsor")
     document.querySelectorAll(".child").forEach(function (elem) {
-        elem.addEventListener("mouseenter", function () {
+      elem.addEventListener("mouseenter", function () {
+          // cosorcolor.style.backgroundColor="red"
           gsap.to("#corsor", {
             transform: "translate(-50%,-50%) scale(1)",
           });
@@ -113,3 +116,10 @@ function cursorAnimation(){
       });
 }
 cursorAnimation()
+
+
+innernav= document.querySelector(".elem .dets")
+
+innernav.addEventListener("mouseenter",function(){
+   
+})

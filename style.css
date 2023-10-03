@@ -59,6 +59,10 @@ body{
     font-size: 13px;
     margin:0 25px
 }
+#nav2 #links a:hover{
+    color: black;
+    font-size:14px ;
+}
 #icons{
     padding: 10px;
     border-radius: 50pc;
@@ -71,8 +75,8 @@ body{
 }
 
 #corsor{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background-color: rgb(148, 213, 251);
     position: fixed;
@@ -119,6 +123,19 @@ body{
     opacity: 0; 
     scale: 0;
 }
+.linecont{
+    /* padding:0 1.7vw ; */
+    min-height:10px;
+    margin:0 1.7vw ;
+    /* background-color: lightblue; */
+    position: relative;
+    width: 96.7%;
+    /* text-align:; */
+}
+#line {
+    height: 1px;
+    background-color: black;
+}
 
 #page2{
     min-height: 100vh;
@@ -151,7 +168,12 @@ body{
     border-radius: 50px;
      position: absolute;
      z-index: 9;
-     background-color:rgb(249, 240, 166);
+     background-color:lightpink;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px;
+     cursor: pointer;
 }
 
 #page3{
